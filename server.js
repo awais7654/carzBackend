@@ -1,7 +1,7 @@
-import 'dotenv/config';
-import express from "express";
-import cors from 'cors';
-import v1Routes from './v1Routes/index.mjs'
+require('dotenv/config');
+const express = require("express");
+const cors = require('cors');
+const v1Routes = require('./v1Routes/index.js');
 
 const app = express();
 app.use(cors());
